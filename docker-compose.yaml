@@ -1,0 +1,11 @@
+version: '2'
+services:
+  web:
+    build: .
+    ports:
+      - "8888:80"
+  redis:
+    image: "redis:alpine"
+ 
+  payment:
+    image: "nginx:latest"
